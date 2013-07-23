@@ -185,10 +185,10 @@ VERSION="1.7.4"
 
 function display_verion_info {
     echo "-----> Display Version Info"
-    echo -n "-----> BuildDir ${ENV["BUILD_DIR"]}"	
-    echo -n "-----> CacheDir ${ENV["CACHE_DIR"]}"	
-    echo -n "-----> JRUBY_OPTS ${ENV["JRUBY_OPTS"]}"	
-    echo -n "-----> VERSION ${ENV["VERSION"]}"	
+    echo -n "-----> BuildDir ${ENV['BUILD_DIR']}"	
+    echo -n "-----> CacheDir ${ENV['CACHE_DIR']}"	
+    echo -n "-----> JRUBY_OPTS ${ENV['JRUBY_OPTS']}"	
+    echo -n "-----> VERSION ${ENV['VERSION']}"	
 }
 
 display_verion_info
