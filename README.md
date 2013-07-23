@@ -2,7 +2,7 @@
 
 A buildpack to fast and easy use JRuby on Heroku. Just create a Heroku app like this:
 
-    heroku create --buildpack https://github.com/jruby/heroku-buildpack-jruby.git 
+    heroku create --buildpack https://github.com/acds/heroku-buildpack-jruby.git 
 
 It will download and unpack JRuby from [jruby.org](http://jruby.org/), install [Bundler](http://gembundler.com/) and run ```bundle install``` and then use your ```Procfile```.
 
@@ -14,7 +14,7 @@ Note: You do normally not want to use ```bundle exec``` with JRuby. Use the bins
 
 Current JRuby version: 1.7.4
 
-For now only 1.9 mode is supported, open an issue if you need 2.0 or 1.8 mode.
+For now only 2.0 mode is supported.
 
 Example application: [github.com/carlhoerberg/heroku-jruby-example](https://github.com/carlhoerberg/heroku-jruby-example)
 
