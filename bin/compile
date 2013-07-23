@@ -185,10 +185,10 @@ VERSION="1.7.4"
 
 function display_verion_info {
     echo "-----> Display Version Info"
-    echo -n "-----> BuildDir ${BUILD_DIR}"	
-    echo -n "-----> CacheDir ${CACHE_DIR}"	
-    echo -n "-----> JRUBY_OPTS ${JRUBY_OPTS}"	
-    echo -n "-----> VERSION ${VERSION}"	
+    echo -n "-----> BuildDir ${BUILD_DIR}" | indent	
+    echo -n "-----> CacheDir ${CACHE_DIR}"| indent	
+    echo -n "-----> JRUBY_OPTS ${JRUBY_OPTS}" | indent	
+    echo -n "-----> VERSION ${VERSION}" | indent	
 }
 
 display_verion_info
@@ -200,6 +200,8 @@ bundle_install_with_cache
 
 create_database_yml
 precompile_assets
+
+display_verion_info
 
 # install_rails_log_stdout
 # install_rails3_server_static_assets
